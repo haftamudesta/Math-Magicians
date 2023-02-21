@@ -1,0 +1,36 @@
+.container {
+  margin-left: 25%;
+  margin-right: 25%;
+  background: #e8e6e6;
+  border-collapse: collapse;
+}
+
+.container td {
+  font-weight: bold;
+}
+
+.inputs {
+  background: gray;
+  height: 60px;
+}
+
+.inputs td {
+  align-content: end;
+  margin-left: 90%;
+}
+
+button {
+  font-size: 20px;
+  width: 100px;
+  height: 40px;
+  border: none;
+}
+
+.operation {
+  background: rgb(238, 99, 84);
+}
+
+.zero {
+  padding-left: 102px;
+  padding-right: 102px;
+}
