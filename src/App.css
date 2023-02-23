@@ -1,0 +1,44 @@
+.title {
+  margin-left: 28%;
+  background: black;
+  color: violet;
+  width: 350px;
+}
+
+.container {
+  margin-left: 25%;
+  margin-right: 25%;
+  background: #e8e6e6;
+  border-collapse: collapse;
+}
+
+.container td {
+  font-weight: bold;
+}
+
+.inputs {
+  background: gray;
+  height: 60px;
+}
+
+.inputs td {
+  align-content: end;
+  color: rgb(72, 73, 178);
+  padding-left: 30%;
+}
+
+button {
+  font-size: 20px;
+  width: 100px;
+  height: 40px;
+  border: none;
+}
+
+.operation {
+  background: rgb(244, 160, 5);
+}
+
+.zero {
+  padding-left: 102px;
+  padding-right: 102px;
+}
