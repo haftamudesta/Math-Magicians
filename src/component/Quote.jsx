@@ -1,5 +1,5 @@
-import React from "react";
-import classes from "./Quote.module.css";
+import React from 'react';
+import classes from './Quote.module.css';
 
 const Quote = () => {
   return (

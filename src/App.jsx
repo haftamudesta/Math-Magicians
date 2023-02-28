@@ -1,7 +1,4 @@
-import "./App.css";
-import Calculator from "./component/Calculator";
-import Home from "./component/Home";
-import Quote from "./component/Quote";
+import './App.css';
 import {
   createBrowserRouter,
   createRoutesFromElements,
@@ -9,7 +6,10 @@ import {
   Link,
   Outlet,
   RouterProvider,
-} from "react-router-dom";
+} from 'react-router-dom';
+import Calculator from './component/Calculator';
+import Home from './component/Home';
+import Quote from './component/Quote';
 
 function App() {
   const router = createBrowserRouter(
@@ -32,7 +32,7 @@ const Root = () => {
   return (
     <>
       <header>
-        <nav></nav>
+        <nav />
       </header>
       <div className="nav__link">
         <div>

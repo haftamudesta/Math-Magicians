@@ -11,8 +11,8 @@ const Calculator = () => {
     if (inputValue !== '' && inputValue.length > 0) {
       const lastIndexChar = inputValue.charAt(inputValue.length - 1);
       if (
-        lastIndexChar !== event.target.value
-        && lastIndexChar.match(/^[0-9]/)
+        lastIndexChar !== event.target.value &&
+        lastIndexChar.match(/^[0-9]/)
       ) {
         setItem(event);
       }
@@ -37,6 +37,7 @@ const Calculator = () => {
 
   return (
     <>
+      <p>lets do some math!</p>
       <table className="container">
         <tr className="inputs">
           <td colSpan="4">{data}</td>
