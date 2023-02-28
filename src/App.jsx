@@ -43,7 +43,7 @@ const Root = () => {
             Home
           </Link>
           <Link className="nav__link-links border" to="/calculator">
-            Clculator
+            Calculator
           </Link>
           <Link className="nav__link-links" to="/quote">
             Quote

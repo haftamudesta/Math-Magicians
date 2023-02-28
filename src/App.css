@@ -53,6 +53,11 @@ button {
   border: none;
 }
 
+button:hover {
+  background: rgb(150, 145, 154);
+  transition: 0.5s ease-in-out;
+}
+
 .operation {
   background: rgb(244, 160, 5);
 }
