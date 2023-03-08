@@ -1,6 +1,4 @@
-/* eslint-disable */
 import calculate from '../Logic/calculate';
-/* eslint-enable */
 
 describe('Check calculate function behavior according to the operation', () => {
   test('Sum operation button', () => {
