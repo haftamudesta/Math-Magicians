@@ -25,6 +25,7 @@
     "import/no-unresolved": "off",
     "linebreak-style": "off",
     "arrow-body-style": "off",
+    "import/extensions": "off",
     "no-eval": "off",
     "no-shadow": "off"
   },
