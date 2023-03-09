@@ -1,7 +1,20 @@
+import React from 'react';
 import { render, screen } from '@testing-library/react';
+import renderer from 'react-test-renderer';
 import operate from '../logic/operate';
 import Calculator from '../component/Calculator';
 import calculate from '../logic/calculate';
+
+test('Should render the calculate component', () => {
+  const calculate = renderer.create(<calculate />).toJSON();
+  expect(calculate).toMatchSnapshot();
+});
+
+test('AC should be on the document', () => {
+  render(<Calculator />);
+  const calculatorElement = screen.getByText('AC');
+  expect(calculatorElement).toBeInTheDocument();
+});
 
 describe('Check if operate function gives the results', () => {
   const obj = {
@@ -61,10 +74,4 @@ describe('Testing calculate', () => {
 
     expect(result.next).toBe('123');
   });
-});
-
-test('AC should be on the document', () => {
-  render(<Calculator />);
-  const calculatorElement = screen.getByText('AC');
-  expect(calculatorElement).toBeInTheDocument();
 });
