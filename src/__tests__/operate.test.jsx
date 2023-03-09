@@ -28,6 +28,8 @@ describe('Check if operate function gives the results', () => {
   });
 });
 
-render(<Calculator />);
-const calculatorElement = screen.getByText('AC');
-expect(calculatorElement).toBeInTheDocument();
+test('AC should be on the document', () => {
+  render(<Calculator />);
+  const calculatorElement = screen.getByText('AC');
+  expect(calculatorElement).toBeInTheDocument();
+});
