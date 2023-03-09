@@ -1,6 +1,7 @@
 import { render, screen } from '@testing-library/react';
 import operate from '../logic/operate';
 import Calculator from '../component/Calculator';
+import calculate from '../logic/calculate';
 
 describe('Check if operate function gives the results', () => {
   const obj = {
@@ -25,6 +26,40 @@ describe('Check if operate function gives the results', () => {
 
   test('Test remainder a % b to get 0', () => {
     expect(operate(obj.a, obj.b, '%')).toEqual('0');
+  });
+});
+
+describe('Testing calculate', () => {
+  const obj = {
+    total: null,
+    next: null,
+    operation: null,
+  };
+  it('AC to be null', () => {
+    obj.next = 88;
+    const result = calculate(obj, 'AC');
+    expect(result).toMatchObject({ total: null, next: null, operation: null });
+  });
+  it('AC to be null', () => {
+    obj.next = 88;
+    const result = calculate(obj, 'AC');
+    expect(result).toMatchObject({ total: null, next: null, operation: null });
+  });
+  it('= is pressed with all the fields filled, it should return total with the operation executed', () => {
+    obj.next = '12';
+    obj.operation = '+';
+    obj.total = '88';
+    const result = calculate(obj, '=');
+
+    expect(result.total).toBe('100');
+  });
+  it('3 is pressed with next already have 12, it should finih as 123', () => {
+    obj.next = '12';
+    obj.operation = null;
+    obj.total = null;
+    const result = calculate(obj, '3');
+
+    expect(result.next).toBe('123');
   });
 });
 
