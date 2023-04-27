@@ -1,0 +1,13 @@
+.btn_quote {
+  display: flex;
+  width: 250px;
+  margin-left: 35%;
+  border: none;
+  background: rgb(102, 137, 41);
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-top: 10px;
+  padding-left: 20px;
+  border-radius: 5px;
+  text-transform: capitalize;
+}

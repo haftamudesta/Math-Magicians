@@ -26,6 +26,7 @@
     "linebreak-style": "off",
     "arrow-body-style": "off",
     "no-eval": "off",
+    "consistent-return": "off",
     "no-shadow": "off"
   },
   "ignorePatterns": ["dist/", "build/"]
