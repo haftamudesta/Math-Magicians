@@ -26,20 +26,12 @@ const Quetes = () => {
   useEffect(() => {
     fetchQuotes();
   }, []);
-
-  if (quotes.length === 0) {
-    return (
-      <div>
-        <h1>Loading...</h1>
-      </div>
-    );
-  }
   return (
     <div>
       <button type="button" onClick={fetchQuotes} className="btn_quote">
         click me to see quotes
       </button>
-      {quotes}
+      {!quotes.length ? 'Loading...' : quotes}
     </div>
   );
 };
