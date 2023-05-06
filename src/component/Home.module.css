@@ -1,0 +1,12 @@
+.heading {
+  margin-left: 15%;
+  margin-right: 30%;
+  font-size: 40px;
+  font-weight: 700;
+  background: blueviolet;
+}
+
+.paragraph {
+  margin-left: 10%;
+  margin-right: 10%;
+}
